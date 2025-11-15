@@ -55,7 +55,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(960, 1080);
+            panel1.Size = new Size(960, 1009);
             panel1.TabIndex = 0;
             // 
             // login_signupBtn
@@ -63,12 +63,12 @@
             login_signupBtn.BackColor = Color.FromArgb(0, 25, 50);
             login_signupBtn.Cursor = Cursors.Hand;
             login_signupBtn.FlatAppearance.BorderSize = 2;
-            login_signupBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(25, 25, 25);
-            login_signupBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(25, 25, 25);
+            login_signupBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 50, 255);
+            login_signupBtn.FlatAppearance.MouseOverBackColor = Color.Blue;
             login_signupBtn.FlatStyle = FlatStyle.Flat;
             login_signupBtn.Font = new Font("Tahoma", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 204);
             login_signupBtn.ForeColor = Color.White;
-            login_signupBtn.Location = new Point(38, 959);
+            login_signupBtn.Location = new Point(38, 907);
             login_signupBtn.Name = "login_signupBtn";
             login_signupBtn.Size = new Size(884, 85);
             login_signupBtn.TabIndex = 8;
@@ -81,7 +81,7 @@
             login_registerLbl.AutoSize = true;
             login_registerLbl.Font = new Font("Tahoma", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 204);
             login_registerLbl.ForeColor = Color.White;
-            login_registerLbl.Location = new Point(315, 890);
+            login_registerLbl.Location = new Point(315, 838);
             login_registerLbl.Name = "login_registerLbl";
             login_registerLbl.Size = new Size(335, 52);
             login_registerLbl.TabIndex = 2;
@@ -92,7 +92,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(242, 700);
+            label2.Location = new Point(242, 648);
             label2.Name = "label2";
             label2.Size = new Size(486, 58);
             label2.TabIndex = 1;
@@ -101,7 +101,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(163, 269);
+            pictureBox1.Location = new Point(163, 217);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(623, 381);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -165,8 +165,8 @@
             login_btn.BackColor = Color.FromArgb(0, 25, 50);
             login_btn.Cursor = Cursors.Hand;
             login_btn.FlatAppearance.BorderSize = 0;
-            login_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(25, 25, 25);
-            login_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(25, 25, 25);
+            login_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 50, 255);
+            login_btn.FlatAppearance.MouseOverBackColor = Color.Blue;
             login_btn.FlatStyle = FlatStyle.Flat;
             login_btn.Font = new Font("Tahoma", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 204);
             login_btn.ForeColor = Color.White;
@@ -196,7 +196,7 @@
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1920, 1080);
+            ClientSize = new Size(1894, 1009);
             Controls.Add(login_showPass);
             Controls.Add(login_btn);
             Controls.Add(login_password);
