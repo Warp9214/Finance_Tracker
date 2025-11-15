@@ -34,7 +34,6 @@
             login_registerLbl = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
-            close = new Label();
             login_signinLbl = new Label();
             label4 = new Label();
             login_username = new TextBox();
@@ -108,18 +107,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // close
-            // 
-            close.AutoSize = true;
-            close.Cursor = Cursors.Hand;
-            close.Font = new Font("Arial", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            close.Location = new Point(1874, 9);
-            close.Name = "close";
-            close.Size = new Size(34, 34);
-            close.TabIndex = 0;
-            close.Text = "X";
-            close.Click += close_Click;
             // 
             // login_signinLbl
             // 
@@ -204,7 +191,7 @@
             login_showPass.UseVisualStyleBackColor = true;
             login_showPass.CheckedChanged += login_showPass_CheckedChanged;
             // 
-            // Form1
+            // LoginUI
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -217,12 +204,12 @@
             Controls.Add(login_username);
             Controls.Add(label4);
             Controls.Add(login_signinLbl);
-            Controls.Add(close);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "LoginUI";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_Login";
+            Text = "Finance Tracker";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -233,7 +220,6 @@
         #endregion
 
         private Panel panel1;
-        private Label close;
         private PictureBox pictureBox1;
         private Label label2;
         private Label login_signinLbl;
