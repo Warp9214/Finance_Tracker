@@ -62,6 +62,7 @@
             // login_signupBtn
             // 
             login_signupBtn.BackColor = Color.FromArgb(0, 25, 50);
+            login_signupBtn.Cursor = Cursors.Hand;
             login_signupBtn.FlatAppearance.BorderSize = 2;
             login_signupBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(25, 25, 25);
             login_signupBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(25, 25, 25);
@@ -74,6 +75,7 @@
             login_signupBtn.TabIndex = 8;
             login_signupBtn.Text = "SIGN UP";
             login_signupBtn.UseVisualStyleBackColor = false;
+            login_signupBtn.Click += login_signupBtn_Click;
             // 
             // label6
             // 
@@ -110,12 +112,14 @@
             // close
             // 
             close.AutoSize = true;
+            close.Cursor = Cursors.Hand;
             close.Font = new Font("Arial", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 204);
             close.Location = new Point(1874, 9);
             close.Name = "close";
             close.Size = new Size(34, 34);
             close.TabIndex = 0;
             close.Text = "X";
+            close.Click += close_Click;
             // 
             // label3
             // 
@@ -140,6 +144,7 @@
             // login_username
             // 
             login_username.BorderStyle = BorderStyle.FixedSingle;
+            login_username.Cursor = Cursors.IBeam;
             login_username.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 204);
             login_username.Location = new Point(1013, 428);
             login_username.Name = "login_username";
@@ -150,11 +155,13 @@
             // login_password
             // 
             login_password.BorderStyle = BorderStyle.FixedSingle;
+            login_password.Cursor = Cursors.IBeam;
             login_password.Font = new Font("Segoe UI", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 204);
             login_password.Location = new Point(1013, 587);
             login_password.Name = "login_password";
             login_password.Size = new Size(858, 57);
             login_password.TabIndex = 6;
+            login_password.UseSystemPasswordChar = true;
             // 
             // label5
             // 
@@ -169,6 +176,7 @@
             // login_btn
             // 
             login_btn.BackColor = Color.FromArgb(0, 25, 50);
+            login_btn.Cursor = Cursors.Hand;
             login_btn.FlatAppearance.BorderSize = 0;
             login_btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(25, 25, 25);
             login_btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(25, 25, 25);
@@ -181,6 +189,7 @@
             login_btn.TabIndex = 7;
             login_btn.Text = "LOGIN";
             login_btn.UseVisualStyleBackColor = false;
+            login_btn.Click += login_btn_Click;
             // 
             // login_showPass
             // 
@@ -193,8 +202,9 @@
             login_showPass.TabIndex = 8;
             login_showPass.Text = "Show Password";
             login_showPass.UseVisualStyleBackColor = true;
+            login_showPass.CheckedChanged += login_showPass_CheckedChanged;
             // 
-            // Form1
+            // Form_Login
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -210,9 +220,9 @@
             Controls.Add(close);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "Form_Login";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Form_Login";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
