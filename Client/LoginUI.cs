@@ -1,9 +1,9 @@
 
 namespace Client
 {
-    public partial class Form1 : Form
+    public partial class LoginUI : Form
     {
-        public Form1()
+        public LoginUI()
         {
             InitializeComponent();
         }
@@ -82,9 +82,10 @@ namespace Client
             }
             //placeholder for login authentication
             else if (login_username.Text == "admin" && login_password.Text == "password")
-            {
-                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //this.Hide();
+            {                
+                ClientUI clientUI = new ClientUI();
+                clientUI.Show();
+                this.Close();
 
             }
             //------------

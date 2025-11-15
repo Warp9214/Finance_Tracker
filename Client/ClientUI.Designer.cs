@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ClientUI";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientUI));
+            SuspendLayout();
+            // 
+            // ClientUI
+            // 
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1894, 1009);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(6, 6, 6, 6);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1920, 1080);
+            Name = "ClientUI";
+            Text = "Finance Tracker";
+            ResumeLayout(false);
         }
 
         #endregion
