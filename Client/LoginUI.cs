@@ -82,10 +82,11 @@ namespace Client
             }
             //placeholder for login authentication
             else if (login_username.Text == "admin" && login_password.Text == "password")
-            {                
+            {
+                this.Close();
                 ClientUI clientUI = new ClientUI();
                 clientUI.Show();
-                this.Close();
+
 
             }
             //------------
