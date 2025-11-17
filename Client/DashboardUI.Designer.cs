@@ -28,52 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardUI));
             panel1 = new Panel();
             panel4 = new Panel();
             label17 = new Label();
-            label7 = new Label();
+            IncomeWeekly_lbl = new Label();
             pictureBox3 = new PictureBox();
             panel3 = new Panel();
             label18 = new Label();
-            label8 = new Label();
+            IncomeDaily_lbl = new Label();
             pictureBox4 = new PictureBox();
             panel2 = new Panel();
             label16 = new Label();
-            label6 = new Label();
+            IncomeMonthly_lbl = new Label();
             pictureBox2 = new PictureBox();
             panel12 = new Panel();
             label15 = new Label();
-            label5 = new Label();
+            IncomeYearly_lbl = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             panel5 = new Panel();
             panel6 = new Panel();
             label21 = new Label();
-            label11 = new Label();
+            ExpenseWeekly_lbl = new Label();
             pictureBox7 = new PictureBox();
             panel7 = new Panel();
             label22 = new Label();
-            label12 = new Label();
+            ExpenseDaily_lbl = new Label();
             pictureBox8 = new PictureBox();
             panel8 = new Panel();
             label20 = new Label();
-            label10 = new Label();
+            ExpenseMonthly_lbl = new Label();
             pictureBox6 = new PictureBox();
             panel14 = new Panel();
             label19 = new Label();
-            label9 = new Label();
+            ExpenseYearly_lbl = new Label();
             pictureBox5 = new PictureBox();
             label2 = new Label();
             panel9 = new Panel();
             panel13 = new Panel();
-            label23 = new Label();
-            label13 = new Label();
+            IncomeTotal_lbl = new Label();
             pictureBox9 = new PictureBox();
             label3 = new Label();
             panel10 = new Panel();
             panel11 = new Panel();
-            label24 = new Label();
-            label14 = new Label();
+            ExpenseTotal_lbl = new Label();
             pictureBox10 = new PictureBox();
             label4 = new Label();
             panel1.SuspendLayout();
@@ -104,7 +103,6 @@
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top;
             panel1.BackColor = Color.White;
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
@@ -122,7 +120,7 @@
             // 
             panel4.BackColor = Color.FromArgb(0, 25, 50);
             panel4.Controls.Add(label17);
-            panel4.Controls.Add(label7);
+            panel4.Controls.Add(IncomeWeekly_lbl);
             panel4.Controls.Add(pictureBox3);
             panel4.Location = new Point(733, 72);
             panel4.Name = "panel4";
@@ -138,25 +136,26 @@
             label17.Location = new Point(130, 120);
             label17.Margin = new Padding(0);
             label17.Name = "label17";
-            label17.Size = new Size(201, 30);
+            label17.Size = new Size(154, 30);
             label17.TabIndex = 5;
-            label17.Text = "This Year's Expences";
+            label17.Text = "Weekly Income";
             // 
-            // label7
+            // IncomeWeekly_lbl
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(130, 40);
-            label7.Margin = new Padding(0);
-            label7.Name = "label7";
-            label7.Size = new Size(197, 45);
-            label7.TabIndex = 4;
-            label7.Text = "1000000.00";
+            IncomeWeekly_lbl.AutoSize = true;
+            IncomeWeekly_lbl.BackColor = Color.Transparent;
+            IncomeWeekly_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            IncomeWeekly_lbl.ForeColor = Color.White;
+            IncomeWeekly_lbl.Location = new Point(130, 40);
+            IncomeWeekly_lbl.Margin = new Padding(0);
+            IncomeWeekly_lbl.Name = "IncomeWeekly_lbl";
+            IncomeWeekly_lbl.Size = new Size(197, 45);
+            IncomeWeekly_lbl.TabIndex = 4;
+            IncomeWeekly_lbl.Text = "1000000.00";
             // 
             // pictureBox3
             // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(25, 50);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(100, 100);
@@ -167,7 +166,7 @@
             // 
             panel3.BackColor = Color.FromArgb(0, 25, 50);
             panel3.Controls.Add(label18);
-            panel3.Controls.Add(label8);
+            panel3.Controls.Add(IncomeDaily_lbl);
             panel3.Controls.Add(pictureBox4);
             panel3.Location = new Point(1086, 72);
             panel3.Name = "panel3";
@@ -183,25 +182,26 @@
             label18.Location = new Point(130, 120);
             label18.Margin = new Padding(0);
             label18.Name = "label18";
-            label18.Size = new Size(201, 30);
+            label18.Size = new Size(134, 30);
             label18.TabIndex = 5;
-            label18.Text = "This Year's Expences";
+            label18.Text = "Daily Income";
             // 
-            // label8
+            // IncomeDaily_lbl
             // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(130, 40);
-            label8.Margin = new Padding(0);
-            label8.Name = "label8";
-            label8.Size = new Size(197, 45);
-            label8.TabIndex = 4;
-            label8.Text = "1000000.00";
+            IncomeDaily_lbl.AutoSize = true;
+            IncomeDaily_lbl.BackColor = Color.Transparent;
+            IncomeDaily_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            IncomeDaily_lbl.ForeColor = Color.White;
+            IncomeDaily_lbl.Location = new Point(130, 40);
+            IncomeDaily_lbl.Margin = new Padding(0);
+            IncomeDaily_lbl.Name = "IncomeDaily_lbl";
+            IncomeDaily_lbl.Size = new Size(197, 45);
+            IncomeDaily_lbl.TabIndex = 4;
+            IncomeDaily_lbl.Text = "1000000.00";
             // 
             // pictureBox4
             // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(25, 50);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(100, 100);
@@ -212,7 +212,7 @@
             // 
             panel2.BackColor = Color.FromArgb(0, 25, 50);
             panel2.Controls.Add(label16);
-            panel2.Controls.Add(label6);
+            panel2.Controls.Add(IncomeMonthly_lbl);
             panel2.Controls.Add(pictureBox2);
             panel2.Location = new Point(381, 72);
             panel2.Name = "panel2";
@@ -228,25 +228,26 @@
             label16.Location = new Point(130, 120);
             label16.Margin = new Padding(0);
             label16.Name = "label16";
-            label16.Size = new Size(201, 30);
+            label16.Size = new Size(165, 30);
             label16.TabIndex = 5;
-            label16.Text = "This Year's Expences";
+            label16.Text = "Monthly Income";
             // 
-            // label6
+            // IncomeMonthly_lbl
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(130, 40);
-            label6.Margin = new Padding(0);
-            label6.Name = "label6";
-            label6.Size = new Size(197, 45);
-            label6.TabIndex = 4;
-            label6.Text = "1000000.00";
+            IncomeMonthly_lbl.AutoSize = true;
+            IncomeMonthly_lbl.BackColor = Color.Transparent;
+            IncomeMonthly_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            IncomeMonthly_lbl.ForeColor = Color.White;
+            IncomeMonthly_lbl.Location = new Point(130, 40);
+            IncomeMonthly_lbl.Margin = new Padding(0);
+            IncomeMonthly_lbl.Name = "IncomeMonthly_lbl";
+            IncomeMonthly_lbl.Size = new Size(197, 45);
+            IncomeMonthly_lbl.TabIndex = 4;
+            IncomeMonthly_lbl.Text = "1000000.00";
             // 
             // pictureBox2
             // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(25, 50);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 100);
@@ -257,7 +258,7 @@
             // 
             panel12.BackColor = Color.FromArgb(0, 25, 50);
             panel12.Controls.Add(label15);
-            panel12.Controls.Add(label5);
+            panel12.Controls.Add(IncomeYearly_lbl);
             panel12.Controls.Add(pictureBox1);
             panel12.Location = new Point(28, 72);
             panel12.Name = "panel12";
@@ -273,25 +274,27 @@
             label15.Location = new Point(130, 120);
             label15.Margin = new Padding(0);
             label15.Name = "label15";
-            label15.Size = new Size(201, 30);
+            label15.Size = new Size(142, 30);
             label15.TabIndex = 4;
-            label15.Text = "This Year's Expences";
+            label15.Text = "Yearly Income";
             // 
-            // label5
+            // IncomeYearly_lbl
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(130, 40);
-            label5.Margin = new Padding(0);
-            label5.Name = "label5";
-            label5.Size = new Size(197, 45);
-            label5.TabIndex = 3;
-            label5.Text = "1000000.00";
+            IncomeYearly_lbl.AutoSize = true;
+            IncomeYearly_lbl.BackColor = Color.Transparent;
+            IncomeYearly_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            IncomeYearly_lbl.ForeColor = Color.White;
+            IncomeYearly_lbl.Location = new Point(130, 40);
+            IncomeYearly_lbl.Margin = new Padding(0);
+            IncomeYearly_lbl.Name = "IncomeYearly_lbl";
+            IncomeYearly_lbl.Size = new Size(197, 45);
+            IncomeYearly_lbl.TabIndex = 3;
+            IncomeYearly_lbl.Text = "1000000.00";
             // 
             // pictureBox1
             // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(25, 50);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 100);
@@ -329,7 +332,7 @@
             // 
             panel6.BackColor = Color.FromArgb(0, 25, 50);
             panel6.Controls.Add(label21);
-            panel6.Controls.Add(label11);
+            panel6.Controls.Add(ExpenseWeekly_lbl);
             panel6.Controls.Add(pictureBox7);
             panel6.Location = new Point(733, 72);
             panel6.Name = "panel6";
@@ -345,25 +348,26 @@
             label21.Location = new Point(130, 120);
             label21.Margin = new Padding(0);
             label21.Name = "label21";
-            label21.Size = new Size(201, 30);
+            label21.Size = new Size(171, 30);
             label21.TabIndex = 5;
-            label21.Text = "This Year's Expences";
+            label21.Text = "Weekly Expences";
             // 
-            // label11
+            // ExpenseWeekly_lbl
             // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.Transparent;
-            label11.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(130, 40);
-            label11.Margin = new Padding(0);
-            label11.Name = "label11";
-            label11.Size = new Size(197, 45);
-            label11.TabIndex = 4;
-            label11.Text = "1000000.00";
+            ExpenseWeekly_lbl.AutoSize = true;
+            ExpenseWeekly_lbl.BackColor = Color.Transparent;
+            ExpenseWeekly_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            ExpenseWeekly_lbl.ForeColor = Color.White;
+            ExpenseWeekly_lbl.Location = new Point(130, 40);
+            ExpenseWeekly_lbl.Margin = new Padding(0);
+            ExpenseWeekly_lbl.Name = "ExpenseWeekly_lbl";
+            ExpenseWeekly_lbl.Size = new Size(197, 45);
+            ExpenseWeekly_lbl.TabIndex = 4;
+            ExpenseWeekly_lbl.Text = "1000000.00";
             // 
             // pictureBox7
             // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(25, 50);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(100, 100);
@@ -374,7 +378,7 @@
             // 
             panel7.BackColor = Color.FromArgb(0, 25, 50);
             panel7.Controls.Add(label22);
-            panel7.Controls.Add(label12);
+            panel7.Controls.Add(ExpenseDaily_lbl);
             panel7.Controls.Add(pictureBox8);
             panel7.Location = new Point(1086, 72);
             panel7.Name = "panel7";
@@ -390,25 +394,26 @@
             label22.Location = new Point(130, 120);
             label22.Margin = new Padding(0);
             label22.Name = "label22";
-            label22.Size = new Size(201, 30);
+            label22.Size = new Size(151, 30);
             label22.TabIndex = 5;
-            label22.Text = "This Year's Expences";
+            label22.Text = "Daily Expences";
             // 
-            // label12
+            // ExpenseDaily_lbl
             // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(130, 40);
-            label12.Margin = new Padding(0);
-            label12.Name = "label12";
-            label12.Size = new Size(197, 45);
-            label12.TabIndex = 4;
-            label12.Text = "1000000.00";
+            ExpenseDaily_lbl.AutoSize = true;
+            ExpenseDaily_lbl.BackColor = Color.Transparent;
+            ExpenseDaily_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            ExpenseDaily_lbl.ForeColor = Color.White;
+            ExpenseDaily_lbl.Location = new Point(130, 40);
+            ExpenseDaily_lbl.Margin = new Padding(0);
+            ExpenseDaily_lbl.Name = "ExpenseDaily_lbl";
+            ExpenseDaily_lbl.Size = new Size(197, 45);
+            ExpenseDaily_lbl.TabIndex = 4;
+            ExpenseDaily_lbl.Text = "1000000.00";
             // 
             // pictureBox8
             // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
             pictureBox8.Location = new Point(25, 50);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(100, 100);
@@ -419,7 +424,7 @@
             // 
             panel8.BackColor = Color.FromArgb(0, 25, 50);
             panel8.Controls.Add(label20);
-            panel8.Controls.Add(label10);
+            panel8.Controls.Add(ExpenseMonthly_lbl);
             panel8.Controls.Add(pictureBox6);
             panel8.Location = new Point(381, 72);
             panel8.Name = "panel8";
@@ -435,25 +440,26 @@
             label20.Location = new Point(130, 120);
             label20.Margin = new Padding(0);
             label20.Name = "label20";
-            label20.Size = new Size(201, 30);
+            label20.Size = new Size(182, 30);
             label20.TabIndex = 5;
-            label20.Text = "This Year's Expences";
+            label20.Text = "Monthly Expences";
             // 
-            // label10
+            // ExpenseMonthly_lbl
             // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(130, 40);
-            label10.Margin = new Padding(0);
-            label10.Name = "label10";
-            label10.Size = new Size(197, 45);
-            label10.TabIndex = 4;
-            label10.Text = "1000000.00";
+            ExpenseMonthly_lbl.AutoSize = true;
+            ExpenseMonthly_lbl.BackColor = Color.Transparent;
+            ExpenseMonthly_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            ExpenseMonthly_lbl.ForeColor = Color.White;
+            ExpenseMonthly_lbl.Location = new Point(130, 40);
+            ExpenseMonthly_lbl.Margin = new Padding(0);
+            ExpenseMonthly_lbl.Name = "ExpenseMonthly_lbl";
+            ExpenseMonthly_lbl.Size = new Size(197, 45);
+            ExpenseMonthly_lbl.TabIndex = 4;
+            ExpenseMonthly_lbl.Text = "1000000.00";
             // 
             // pictureBox6
             // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(25, 50);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(100, 100);
@@ -464,7 +470,7 @@
             // 
             panel14.BackColor = Color.FromArgb(0, 25, 50);
             panel14.Controls.Add(label19);
-            panel14.Controls.Add(label9);
+            panel14.Controls.Add(ExpenseYearly_lbl);
             panel14.Controls.Add(pictureBox5);
             panel14.Location = new Point(28, 72);
             panel14.Name = "panel14";
@@ -480,25 +486,26 @@
             label19.Location = new Point(130, 120);
             label19.Margin = new Padding(0);
             label19.Name = "label19";
-            label19.Size = new Size(201, 30);
+            label19.Size = new Size(159, 30);
             label19.TabIndex = 5;
-            label19.Text = "This Year's Expences";
+            label19.Text = "Yearly Expences";
             // 
-            // label9
+            // ExpenseYearly_lbl
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(130, 40);
-            label9.Margin = new Padding(0);
-            label9.Name = "label9";
-            label9.Size = new Size(197, 45);
-            label9.TabIndex = 4;
-            label9.Text = "1000000.00";
+            ExpenseYearly_lbl.AutoSize = true;
+            ExpenseYearly_lbl.BackColor = Color.Transparent;
+            ExpenseYearly_lbl.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            ExpenseYearly_lbl.ForeColor = Color.White;
+            ExpenseYearly_lbl.Location = new Point(130, 40);
+            ExpenseYearly_lbl.Margin = new Padding(0);
+            ExpenseYearly_lbl.Name = "ExpenseYearly_lbl";
+            ExpenseYearly_lbl.Size = new Size(197, 45);
+            ExpenseYearly_lbl.TabIndex = 4;
+            ExpenseYearly_lbl.Text = "1000000.00";
             // 
             // pictureBox5
             // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(25, 50);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(100, 100);
@@ -519,7 +526,6 @@
             // 
             // panel9
             // 
-            panel9.Anchor = AnchorStyles.Bottom;
             panel9.BackColor = Color.White;
             panel9.Controls.Add(panel13);
             panel9.Controls.Add(label3);
@@ -533,42 +539,30 @@
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(0, 25, 50);
-            panel13.Controls.Add(label23);
-            panel13.Controls.Add(label13);
+            panel13.Controls.Add(IncomeTotal_lbl);
             panel13.Controls.Add(pictureBox9);
             panel13.Location = new Point(28, 72);
             panel13.Name = "panel13";
             panel13.Size = new Size(650, 200);
             panel13.TabIndex = 3;
             // 
-            // label23
+            // IncomeTotal_lbl
             // 
-            label23.AutoSize = true;
-            label23.BackColor = Color.Transparent;
-            label23.Font = new Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label23.ForeColor = Color.White;
-            label23.Location = new Point(130, 120);
-            label23.Margin = new Padding(0);
-            label23.Name = "label23";
-            label23.Size = new Size(201, 30);
-            label23.TabIndex = 5;
-            label23.Text = "This Year's Expences";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Transparent;
-            label13.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label13.ForeColor = Color.White;
-            label13.Location = new Point(130, 40);
-            label13.Margin = new Padding(0);
-            label13.Name = "label13";
-            label13.Size = new Size(197, 45);
-            label13.TabIndex = 4;
-            label13.Text = "1000000.00";
+            IncomeTotal_lbl.AutoSize = true;
+            IncomeTotal_lbl.BackColor = Color.Transparent;
+            IncomeTotal_lbl.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold);
+            IncomeTotal_lbl.ForeColor = Color.White;
+            IncomeTotal_lbl.Location = new Point(167, 74);
+            IncomeTotal_lbl.Margin = new Padding(0);
+            IncomeTotal_lbl.Name = "IncomeTotal_lbl";
+            IncomeTotal_lbl.Size = new Size(268, 59);
+            IncomeTotal_lbl.TabIndex = 4;
+            IncomeTotal_lbl.Text = "1000000.00";
+            IncomeTotal_lbl.Click += label13_Click;
             // 
             // pictureBox9
             // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
             pictureBox9.Location = new Point(25, 50);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(100, 100);
@@ -589,7 +583,6 @@
             // 
             // panel10
             // 
-            panel10.Anchor = AnchorStyles.Bottom;
             panel10.BackColor = Color.White;
             panel10.Controls.Add(panel11);
             panel10.Controls.Add(label4);
@@ -603,42 +596,29 @@
             // panel11
             // 
             panel11.BackColor = Color.FromArgb(0, 25, 50);
-            panel11.Controls.Add(label24);
-            panel11.Controls.Add(label14);
+            panel11.Controls.Add(ExpenseTotal_lbl);
             panel11.Controls.Add(pictureBox10);
             panel11.Location = new Point(28, 72);
             panel11.Name = "panel11";
             panel11.Size = new Size(650, 200);
             panel11.TabIndex = 3;
             // 
-            // label24
+            // ExpenseTotal_lbl
             // 
-            label24.AutoSize = true;
-            label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Segoe UI", 7.875F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label24.ForeColor = Color.White;
-            label24.Location = new Point(130, 120);
-            label24.Margin = new Padding(0);
-            label24.Name = "label24";
-            label24.Size = new Size(201, 30);
-            label24.TabIndex = 5;
-            label24.Text = "This Year's Expences";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(130, 40);
-            label14.Margin = new Padding(0);
-            label14.Name = "label14";
-            label14.Size = new Size(197, 45);
-            label14.TabIndex = 4;
-            label14.Text = "1000000.00";
+            ExpenseTotal_lbl.AutoSize = true;
+            ExpenseTotal_lbl.BackColor = Color.Transparent;
+            ExpenseTotal_lbl.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold);
+            ExpenseTotal_lbl.ForeColor = Color.White;
+            ExpenseTotal_lbl.Location = new Point(167, 74);
+            ExpenseTotal_lbl.Margin = new Padding(0);
+            ExpenseTotal_lbl.Name = "ExpenseTotal_lbl";
+            ExpenseTotal_lbl.Size = new Size(268, 59);
+            ExpenseTotal_lbl.TabIndex = 4;
+            ExpenseTotal_lbl.Text = "1000000.00";
             // 
             // pictureBox10
             // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(25, 50);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(100, 100);
@@ -740,16 +720,16 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
-        private Label label5;
-        private Label label7;
-        private Label label8;
-        private Label label6;
-        private Label label11;
-        private Label label12;
-        private Label label10;
-        private Label label9;
-        private Label label13;
-        private Label label14;
+        private Label IncomeYearly_lbl;
+        private Label IncomeWeekly_lbl;
+        private Label IncomeDaily_lbl;
+        private Label IncomeMonthly_lbl;
+        private Label ExpenseWeekly_lbl;
+        private Label ExpenseDaily_lbl;
+        private Label ExpenseMonthly_lbl;
+        private Label ExpenseYearly_lbl;
+        private Label IncomeTotal_lbl;
+        private Label ExpenseTotal_lbl;
         private Label label15;
         private Label label17;
         private Label label18;
@@ -758,7 +738,5 @@
         private Label label22;
         private Label label20;
         private Label label19;
-        private Label label23;
-        private Label label24;
     }
 }
