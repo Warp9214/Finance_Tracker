@@ -55,6 +55,27 @@ namespace Infrastructure.Migrations
                     b.ToTable("Currencies");
                 });
 
+            modelBuilder.Entity("Domain.LogEntry", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Event")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LogEntries");
+                });
+
             modelBuilder.Entity("Domain.Transaction", b =>
                 {
                     b.Property<int>("Id")
